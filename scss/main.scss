@@ -1,0 +1,112 @@
+$grey: #999999;
+$yellow: #faf4de;
+$orange: #d4422f;
+$white: #ffffff;
+
+html {
+  box-sizing: border-box;
+  color: $grey;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+input, select {
+  font-size: 0.9em;
+}
+
+body {
+  background: $yellow;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $orange;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 950px;
+}
+
+header {
+  background-color: $white;
+  border-bottom: 3px solid $orange;
+  height: 120px;
+  position: relative;
+  font-weight: lighter;
+
+  .logo {
+    display: inline-block;
+    height: 100%;
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  .title {
+    display: inline-block;
+  }
+
+  .top_menu {
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+    right: 0px;
+    top: 50px; 
+    a {
+      display: inline-block;
+      margin: 0 10px;
+      &.current {
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .session_info {
+    font-size: 0.8em;
+    position: absolute;
+    right: 0px;
+    top: 10;
+    a.logout {
+      color: $grey;
+    }
+    img {
+      width: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.search_bar {
+  margin: 20px auto;
+  width: 710px;
+  input[type=text] {
+    border: solid 1px $grey;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 36px;
+    width: 100%;
+    background: #fff url('../images/magnificat.jpg') no-repeat;
+    background-position: 98% 50%;
+  }
+}
+
+.group_movies {
+  margin-bottom: 40px;
+  h2 {
+    border-bottom: 1px solid $grey;
+    color: $orange;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+  }
+  .movies {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    .movie {
+      box-shadow: 2px -3px $orange;
+    }
+  }
+}

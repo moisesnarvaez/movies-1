@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+  color: #999999;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+input, select {
+  font-size: 0.9em; }
+
+body {
+  background: #faf4de;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #d4422f;
+  text-decoration: none; }
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 950px; }
+
+header {
+  background-color: #ffffff;
+  border-bottom: 3px solid #d4422f;
+  height: 120px;
+  position: relative;
+  font-weight: lighter; }
+  header .logo {
+    display: inline-block;
+    height: 100%; }
+    header .logo img {
+      vertical-align: middle; }
+  header .title {
+    display: inline-block; }
+  header .top_menu {
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+    right: 0px;
+    top: 50px; }
+    header .top_menu a {
+      display: inline-block;
+      margin: 0 10px; }
+      header .top_menu a.current {
+        font-weight: bolder; }
+  header .session_info {
+    font-size: 0.8em;
+    position: absolute;
+    right: 0px;
+    top: 10; }
+    header .session_info a.logout {
+      color: #999999; }
+    header .session_info img {
+      width: 20px;
+      vertical-align: middle; }
+
+.search_bar {
+  margin: 20px auto;
+  width: 710px; }
+  .search_bar input[type=text] {
+    border: solid 1px #999999;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 36px;
+    width: 100%;
+    background: #fff url("../images/magnificat.jpg") no-repeat;
+    background-position: 98% 50%; }
+
+.group_movies {
+  margin-bottom: 40px; }
+  .group_movies h2 {
+    border-bottom: 1px solid #999999;
+    color: #d4422f;
+    padding-bottom: 5px;
+    font-size: 1.3em; }
+  .group_movies .movies {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px; }
+    .group_movies .movies .movie {
+      box-shadow: 2px -3px #d4422f; }
