@@ -68,7 +68,7 @@ header {
     font-size: 0.8em;
     position: absolute;
     right: 0px;
-    top: 10;
+    top: 10px;
     a.logout {
       color: $grey;
     }
@@ -82,7 +82,10 @@ header {
 .search_bar {
   margin: 20px auto;
   width: 710px;
-  input[type=text] {
+  h2 {
+    display: none;
+  }
+  .search-field {
     border: solid 1px $grey;
     border-radius: 5px;
     padding: 10px;

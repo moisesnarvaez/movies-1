@@ -48,7 +48,7 @@ header {
     font-size: 0.8em;
     position: absolute;
     right: 0px;
-    top: 10; }
+    top: 10px; }
     header .session_info a.logout {
       color: #999999; }
     header .session_info img {
@@ -58,7 +58,9 @@ header {
 .search_bar {
   margin: 20px auto;
   width: 710px; }
-  .search_bar input[type=text] {
+  .search_bar h2 {
+    display: none; }
+  .search_bar .search-field {
     border: solid 1px #999999;
     border-radius: 5px;
     padding: 10px;
