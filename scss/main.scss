@@ -108,6 +108,8 @@ header {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-gap: 10px;
+    list-style: none;
+    padding: 0;
     .movie {
       box-shadow: 2px -3px $orange;
     }

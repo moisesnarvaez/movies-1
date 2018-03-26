@@ -79,6 +79,8 @@ header {
   .group_movies .movies {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    list-style: none;
+    padding: 0; }
     .group_movies .movies .movie {
       box-shadow: 2px -3px #d4422f; }
